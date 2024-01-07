@@ -1,0 +1,31 @@
+keymap:
+  - name: Global bindings
+    application:
+      not: [Emacs, Emacs-29, konsole]
+    remap:
+      C-a: { with_mark: home }
+      C-b: { with_mark: left }
+      C-d: [delete, { set_mark: false }]
+      C-e: { with_mark: end }
+      C-f: { with_mark: right }
+      C-k: [Shift-end, C-x, { set_mark: false }]
+      C-m: enter
+      C-n: { with_mark: down }
+      C-p: { with_mark: up }
+      C-v: { with_mark: pagedown }
+      M-Shift-comma: { with_mark: C-home }
+      M-Shift-dot: { with_mark: C-end }
+      M-b: { with_mark: C-left }
+      M-d: [C-delete, { set_mark: false }]
+      M-f: { with_mark: C-right }
+      M-v: { with_mark: pageup }
+      Super-Shift-KEY_LEFTBRACE: C-Shift-tab
+      Super-Shift-KEY_RIGHTBRACE: C-tab
+      Super-a: C-a
+      Super-f: C-f
+      Super-r: C-r
+      Super-t: C-t
+      Super-v: C-v
+      Super-w: C-w
+      Super-x: C-x
+      Super-z: C-z
